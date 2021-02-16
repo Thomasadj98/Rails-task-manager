@@ -1,0 +1,40 @@
+// Place all the styles related to the tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.tasksdashboard {
+  width: 60%;
+  margin: 0 auto;
+  border: 1px solid rgb(155, 167, 186);
+  padding: 20px;
+  border-radius: 5px;
+    h1 {
+      margin-top: 0;
+      padding-top: 0;
+    }
+}
+
+.alltasks {
+  padding-left: 0;
+  li {
+    list-style: none;
+    margin-top: 10px;
+    background-color: rgb(201, 222, 255);
+    padding: 10px;
+    border-radius: 2px;
+    border: 1px solid rgb(191, 191, 191);
+  }
+  li:last-child {
+    margin-bottom: 20px;
+  }
+}
+
+.tasktitle {
+  text-decoration: none;
+  color: black;
+}

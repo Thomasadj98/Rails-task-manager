@@ -1,0 +1,17 @@
+<h1><%= @task.title %></h1>
+<h4><%= @task.details %></h4>
+
+<p>
+   <%=
+    if @task.completed == false
+      "[ ] - This task is not completed"
+    else
+      "[X] - This task is completed"
+    end
+  %>
+</p>
+
+<%= link_to "Go back", tasks_path %>
+<%= link_to "edit task", mango_path(@task)  %>
+<%= link_to 'destroy', task_path(@task), method: :delete, data: {confirm: "Are you sure?"} %>
+

@@ -1,0 +1,22 @@
+
+<div class="tasksdashboard">
+  <h1>All My Tasks</h1>
+
+  <ul class="alltasks">
+    <% @tasks.each do |task| %>
+    <li>
+
+      <% if task.completed == false %>
+        <i class="far fa-square"> | </i>
+      <% else %>
+        <i class="far fa-check-square"> | </i>
+      <% end %>
+
+        <%= link_to task.title, task_path(task), :class => 'tasktitle' %>
+
+    </li>
+    <% end %>
+  </ul>
+
+  <i class="fas fa-plus"></i> | <%= link_to "Create new Task", new_task_path, :class => 'tasktitle' %>
+</div>
